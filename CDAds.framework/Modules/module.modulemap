@@ -1,0 +1,6 @@
+framework module CDAds {
+  umbrella header "CDAds.h"
+
+  export *
+  module * { export * }
+}
