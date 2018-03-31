@@ -17,6 +17,7 @@
 @property (strong, nonatomic, nonnull) NSString *publisherId;
 @property (strong, nonatomic, nonnull) NSString *secret;
 @property (strong, nonatomic, nonnull) NSString *site;
+@property (strong, nonatomic, nonnull) NSString *siteId;
 @property (strong, nonatomic, nonnull) NSString *applicationIABCategory;
 @property CLLocationDistance distanceFilter;
 @property NSTimeInterval locationUpdateInterval;
