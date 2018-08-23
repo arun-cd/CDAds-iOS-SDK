@@ -25,4 +25,5 @@
 @property CDLogLevel logLevel;
 @property CDADProvider provider;
 @property CDEnvironment environment;
+@property Boolean showTrackingTerms;
 @end
