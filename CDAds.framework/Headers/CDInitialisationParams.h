@@ -26,4 +26,5 @@
 @property CDADProvider provider;
 @property CDEnvironment environment;
 @property Boolean showTrackingTerms;
+@property Boolean clientHasUserTrackingPermission;
 @end
