@@ -17,6 +17,8 @@
 #import "CDADDefines.h"
 #import "CDAdView.h"
 #import "CDAdViewDelegate.h"
+#import "CDGlobal.h"
+#import "CDADRequestError.h"
 
     //! Project version number for CDAds.
 FOUNDATION_EXPORT double CDAdsVersionNumber;
