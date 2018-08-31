@@ -3,7 +3,7 @@
 //  Glass-Example
 //
 //  Created by Arun Gupta on 14/07/16.
-//  Copyright © 2016 rain. All rights reserved.
+//  Copyright © 2016Chalkdigital. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -13,12 +13,9 @@
 
 @interface CDInitialisationParams : NSObject
 
-@property (strong, nonatomic, nonnull) NSString *key;
-@property (strong, nonatomic, nonnull) NSString *publisherId;
-@property (strong, nonatomic, nonnull) NSString *secret;
-@property (strong, nonatomic, nonnull) NSString *site;
-@property (strong, nonatomic, nonnull) NSString *siteId;
+@property (strong, nonatomic, nonnull) NSString *partnerId;
 @property (strong, nonatomic, nonnull) NSString *applicationIABCategory;
+@property (strong, nonatomic, nonnull) NSString *partnerSecret;
 @property CLLocationDistance distanceFilter;
 @property NSTimeInterval locationUpdateInterval;
 @property NSTimeInterval adLocationExpiryInterval;

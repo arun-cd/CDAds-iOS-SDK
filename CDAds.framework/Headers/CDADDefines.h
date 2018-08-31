@@ -13,11 +13,6 @@
 #define CDNetworkStatusNotReachable @"CDNetworkStatusNotReachable"
 #define CDNetworkStatusUnknown      @"CDNetworkStatusUnknown"
 
-typedef enum CDLogLevels{
-    CDLogLevelNone,
-    CDLogLevelDetail
-}CDLogLevel;
-
 typedef enum CDEnvironments{
     CDEnvironmentProduction,
     CDEnvironmentTest
@@ -39,3 +34,22 @@ typedef enum CDADProviders{
     CDADProviderUnityAds,
     CDADProviderYuMe
 }CDADProvider;
+
+//typedef enum CDADTypes{
+//    CDADTypeUnknown = -1,
+//    CDADTypeBanner = 0,
+//    CDADTypeInterstitial = 1
+//}CDADType;
+
+
+typedef enum CDLogLevels
+{
+    CDLogLevelAll        = 0,
+    CDLogLevelTrace        = 10,
+    CDLogLevelDebug        = 20,
+    CDLogLevelInfo        = 30,
+    CDLogLevelWarn        = 40,
+    CDLogLevelError        = 50,
+    CDLogLevelFatal        = 60,
+    CDLogLevelOff        = 70
+} CDLogLevel;

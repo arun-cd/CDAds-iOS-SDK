@@ -1,0 +1,21 @@
+/*
+ CDAdsLocalization.strings
+ CDAds
+ 
+ Created by Arun Gupta on 28/07/16.
+ Copyright © 2016 Chalkdigital. All rights reserved.
+ */
+"TrackingPermissionTitle" = "は、あなたのデバイスの情報を使用したいと思います。";
+"TrackingPermissionMessage" = "デバイス情報は、より良いあなたに提供するために必要とされます。";
+"LocationServiceDisabledTitle" = "位置情報サービスが無効です。";
+"LocationServiceDisabledMessage" = "正確な情報を配信するために、位置情報サービスへのアクセスが必要です。端末の位置情報サービスの利用を許可してください。";
+"LocationPermissionDeniedMessage" = "正確な情報を配信するために、位置情報サービスへのアクセスが必要です。端末設定から、このアプリの位置情報サービスの利用を許可してください。";
+"LocationPermissionDeniedTitle" = "位置情報にアクセスする権限がありません。";
+"PermissionAllowLabel" = "OK";
+"PermissionDenyLabel" = "許可しないでください";
+"AlertDialogCancelLabel" = "OK";
+"AgreeButtonTitle" = "Agree";
+"DisagreeButtonTitle" = "DisAgree";
+"CDADTerms" = "Chalkdigitalは、より良いサービスを提供するためにデバイス情報を追跡したいと考えています。続行するには、以下の条項およびコンテンションに同意してください。\n\n1。 Chalkdigitalはデバイス情報を使用して、デバイス上の特定の広告をターゲットに設定できます。\n\n2。 Chalkdigitalはあなたのデバイス情報を他の広告出版社と共有できます";
+"PermissionHeadingLabel" = "Terms and Conditions";
+"SettingsButtonLabel" = "設定";

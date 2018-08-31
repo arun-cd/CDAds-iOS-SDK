@@ -3,7 +3,7 @@
 //  Glass-Example
 //
 //  Created by Arun Gupta on 12/07/16.
-//  Copyright © 2016 rain. All rights reserved.
+//  Copyright © 2016Chalkdigital. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -52,3 +52,4 @@ CDAD_EXTERN CDAdSize const kCDAdSizeBanner300x50;
 CDAD_EXTERN CDAdSize const kCDAdSizeBanner300x250;
 
 CDAD_ASSUME_NONNULL_END
+

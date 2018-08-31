@@ -3,7 +3,7 @@
 //  Glass-Example
 //
 //  Created by Arun Gupta on 13/07/16.
-//  Copyright © 2016 rain. All rights reserved.
+//  Copyright © 2016Chalkdigital. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

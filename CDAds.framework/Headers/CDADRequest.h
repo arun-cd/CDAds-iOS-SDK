@@ -3,7 +3,7 @@
 //  Chalkboard
 //
 //  Created by Arun Gupta on 15/09/15.
-//  Copyright (c) 2015 Arun Gupta. All rights reserved.
+//  Copyright (c) 2016 Arun Gupta. All rights reserved.
 //
 #import "CDDeviceInfo.h"
 #import "CDGeoInfo.h"
@@ -15,6 +15,8 @@
 @property (strong, nonatomic, nonnull) NSString *targetingEducation;
 @property (strong, nonatomic, nonnull) NSString *targetingLanguage;
 @property (strong, nonatomic, nonnull) NSString *keyword;
+@property (strong, nonatomic, nonnull) NSString *placementId;
+@property (strong, nonatomic, nonnull) NSString *partnerId;
 @property (strong, readonly, nonatomic, nonnull) NSString *ver;
 @property BOOL onlySecureImpressionsAllowed;
 @property BOOL locationAutoUpdateEnabled;
