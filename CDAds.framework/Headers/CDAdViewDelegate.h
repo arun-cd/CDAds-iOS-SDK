@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "CDGeoInfo.h"
 @class CDAdView;
 
 
@@ -28,12 +29,11 @@
 
 @optional
 - (NSDictionary*) targetingParameters:(CDAdView*)cdAdView;
-- (BOOL) testingMode:(CDAdView*)cdAdView;
 - (UIColor*) textAdFontColor:(CDAdView*)cdAdView;
 - (UIColor*) backgroundColor:(CDAdView*)cdAdView;
 - (UIColor*) textAdBorderColor:(CDAdView*)cdAdView;
 - (BOOL) locationServicesEnabled:(CDAdView*)cdAdView;
-- (CLLocation *) locationObject:(CDAdView*)cdAdView;
+- (CDGeoInfo *) locationObject:(CDAdView*)cdAdView;
 - (void) fullScreenWebViewActivated:(CDAdView*)cdAdView;
 - (void) fullScreenWebViewClosed:(CDAdView*)cdAdView;
 - (BOOL) useInAppBrowser:(CDAdView*)cdAdView;
