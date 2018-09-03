@@ -11,6 +11,7 @@
 
 @interface CDAdView : UIView
 @property (readonly) BOOL isInterstitialReady;
+@property (weak, nonatomic) id<CDAdViewDelegate>delegate;
 + (CDAdView*)createAdViewWithDelegate:(id<CDAdViewDelegate>)delegate;
 - (void)getAdWithNotification;
 - (void)getAd;
