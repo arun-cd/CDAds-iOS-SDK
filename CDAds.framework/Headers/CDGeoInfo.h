@@ -20,4 +20,5 @@
 @property (strong, nonatomic, nonnull) NSString* streetAddress;
 @property (strong, nonatomic, nonnull) NSString* subThoroughFare;
 @property (strong, nonatomic, nonnull) NSString* haccuracy;
+@property (nonatomic) NSInteger metroCode;
 @end
