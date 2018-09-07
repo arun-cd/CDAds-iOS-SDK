@@ -2,7 +2,7 @@
 //  PendingLocations+CoreDataClass.h
 //  
 //
-//  Created by Arun Gupta on 03/09/18.
+//  Created by Arun Gupta on 07/09/18.
 //
 //  This file was automatically generated and should not be edited.
 //
