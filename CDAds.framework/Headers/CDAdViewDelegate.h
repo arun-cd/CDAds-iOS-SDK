@@ -22,6 +22,9 @@
 - (CGRect) cdAdViewFrame:(CDAdView*)cdAdView;
 - (void) getAdSucceeded:(CDAdView*)cdAdView;
 - (void) getAdFailed:(CDAdView*)cdAdView;
+- (void) getMrecAdSucceeded:(CDAdView*)cdAdView;
+- (void) getMrecAdFailed:(CDAdView*)cdAdView;
+- (void) mrecActivated:(CDAdView*)cdAdView;
 - (void) getInterstitialAdSucceeded:(CDAdView*)cdAdView;
 - (void) getInterstitialAdFailed:(CDAdView*)cdAdView;
 - (void) interstitialActivated:(CDAdView*)cdAdView;
@@ -34,8 +37,10 @@
 - (UIColor*) textAdBorderColor:(CDAdView*)cdAdView;
 - (BOOL) locationServicesEnabled:(CDAdView*)cdAdView;
 - (CDGeoInfo *) locationObject:(CDAdView*)cdAdView;
-- (void) fullScreenWebViewActivated:(CDAdView*)cdAdView;
-- (void) fullScreenWebViewClosed:(CDAdView*)cdAdView;
 - (BOOL) useInAppBrowser:(CDAdView*)cdAdView;
+- (void) interstitialWillAppear:(CDAdView*)cdAdView;
+- (void) interstitialWillDisappear:(CDAdView*)cdAdView;
+- (void) adViewWillLeaveApplication:(CDAdView*)cdAdView;
+- (void) adViewDidReceiveTapEvent:(CDAdView*)cdAdView;
 @end
 

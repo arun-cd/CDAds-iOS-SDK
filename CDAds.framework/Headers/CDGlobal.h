@@ -2,8 +2,8 @@
 //  CDLogProvider.h
 //  CDAds
 //
-//  Created by Arun Gupta on 07/11/17.
-//  Copyright © 2017 Chalkdigital. All rights reserved.
+//  Created by Arun Gupta on 07/01/19.
+//  Copyright © 2019 Chalk Digital Inc. All rights reserved.
 //
 
 
@@ -62,6 +62,7 @@ typedef NSUInteger CDInterstitialCloseButtonStyle;
 enum {
     CDInterstitialOrientationTypePortrait,
     CDInterstitialOrientationTypeLandscape,
+    CDInterstitialOrientationTypeCurrent,
     CDInterstitialOrientationTypeAll
 };
 typedef NSUInteger CDInterstitialOrientationType;

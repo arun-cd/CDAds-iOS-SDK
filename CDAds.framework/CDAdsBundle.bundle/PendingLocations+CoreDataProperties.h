@@ -2,7 +2,7 @@
 //  PendingLocations+CoreDataProperties.h
 //  
 //
-//  Created by Arun Gupta on 11/09/18.
+//  Created by Arun Gupta on 05/03/19.
 //
 //  This file was automatically generated and should not be edited.
 //
@@ -16,11 +16,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<PendingLocations *> *)fetchRequest;
 
-@property (nullable, nonatomic, copy) NSDate *date;
-@property (nullable, nonatomic, copy) NSString *horizontalaccuracy;
-@property (nonatomic) float lat;
-@property (nonatomic) float lon;
+@property (nonatomic) double altitude;
+@property (nonatomic) int16_t connectiontype;
+@property (nonatomic) double dwelltime;
+@property (nonatomic) int64_t epoctime;
+@property (nonatomic) double horizontalaccuracy;
+@property (nullable, nonatomic, copy) NSString *ipaddress;
+@property (nonatomic) double lat;
+@property (nonatomic) double lon;
 @property (nonatomic) int16_t provider;
+@property (nonatomic) double speed;
+@property (nullable, nonatomic, copy) NSString *timezone;
+@property (nonatomic) double verticalaccuracy;
 
 @end
 

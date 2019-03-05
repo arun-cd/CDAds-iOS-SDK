@@ -1,9 +1,9 @@
 /*
  CDAdsLocalization.strings
  CDAds
-
+ 
  Created by Arun Gupta on 28/07/16.
- Copyright © 2016 Chalkdigital. All rights reserved.
+ Copyright © 2016 Chalk Digital. All rights reserved.
  */
 
 "TrackingPermissionTitle" = "would like to use your device information.";
@@ -17,6 +17,6 @@
 "AlertDialogCancelLabel" = "OK";
 "AgreeButtonTitle" = "Agree";
 "DisagreeButtonTitle" = "DisAgree";
-"CDADTerms" = "Chalkdigital would like to track your device informtion to serve you better. Please agree following terms and contions to proceed.\n\n1. Chalkdigital can use your device information to target specific ads on your device.\n\n2. Chalkdigital can share your device infomation with other ad publishers.";
+"CDADTerms" = "Chalk Digital would like to track your device informtion to serve you better. Please agree following terms and contions to proceed.\n\n1. Chalk Digital can use your device information to target specific ads on your device.\n\n2. Chalk Digital can share your device infomation with other ad publishers.";
 "PermissionHeadingLabel" = "Terms and Conditions";
 "SettingsButtonLabel" = "Settings";

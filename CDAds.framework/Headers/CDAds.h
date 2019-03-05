@@ -2,8 +2,8 @@
     //  CDAds.h
     //  CDAds
     //
-    //  Created by Arun Gupta on 15/07/16.
-    //  Copyright © 2016 Chalkdigital. All rights reserved.
+    //  Created by Arun Gupta on 15/01/19.
+    //  Copyright © 2019 Chalk Digital Inc. All rights reserved.
     //
 
 

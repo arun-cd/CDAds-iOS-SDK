@@ -2,8 +2,8 @@
 //  CDDeviceInfo.h
 //  Glass-Example
 //
-//  Created by Arun Gupta on 13/07/16.
-//  Copyright © 2016Chalkdigital. All rights reserved.
+//  Created by Arun Gupta on 13/01/19.
+//  Copyright © 2019Chalk Digital Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

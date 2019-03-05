@@ -1,9 +1,8 @@
 //
 //  CDADRequest.h
-//  Chalkboard
 //
-//  Created by Arun Gupta on 15/09/15.
-//  Copyright (c) 2016 Arun Gupta. All rights reserved.
+//  Created by Arun Gupta on 15/01/19.
+//  Copyright (c) 2019 Arun Gupta. All rights reserved.
 //
 #import "CDDeviceInfo.h"
 #import "CDGeoInfo.h"

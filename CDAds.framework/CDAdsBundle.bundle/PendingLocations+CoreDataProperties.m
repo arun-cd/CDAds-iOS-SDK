@@ -2,7 +2,7 @@
 //  PendingLocations+CoreDataProperties.m
 //  
 //
-//  Created by Arun Gupta on 11/09/18.
+//  Created by Arun Gupta on 05/03/19.
 //
 //  This file was automatically generated and should not be edited.
 //
@@ -15,10 +15,17 @@
 	return [NSFetchRequest fetchRequestWithEntityName:@"PendingLocations"];
 }
 
-@dynamic date;
+@dynamic altitude;
+@dynamic connectiontype;
+@dynamic dwelltime;
+@dynamic epoctime;
 @dynamic horizontalaccuracy;
+@dynamic ipaddress;
 @dynamic lat;
 @dynamic lon;
 @dynamic provider;
+@dynamic speed;
+@dynamic timezone;
+@dynamic verticalaccuracy;
 
 @end

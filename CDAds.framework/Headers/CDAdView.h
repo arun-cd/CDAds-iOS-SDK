@@ -3,7 +3,7 @@
 //  CDAds
 //
 //  Created by Arun Gupta on 07/01/18.
-//  Copyright © 2018 Arun Gupta. All rights reserved.
+//  Copyright © 2019 Arun Gupta. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -17,4 +17,7 @@
 - (void)getAd;
 - (void)getInterstitialAd;
 - (void)displayInterstitial;
+- (void)getInterstitialVideoAd;
+- (void)getMRECVideoAd;
+- (void)displayMrec;
 @end
