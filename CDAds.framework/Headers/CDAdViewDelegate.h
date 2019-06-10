@@ -11,6 +11,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "CDGeoInfo.h"
 @class CDAdView;
+#import "CDAdSize.h"
 
 
 @protocol CDAdViewDelegate <NSObject>
@@ -20,6 +21,7 @@
 - (NSString*)partnerId:(CDAdView*)cdAdView;
 - (UIViewController *) applicationUIViewController:(CDAdView*)cdAdView;
 - (CGRect) cdAdViewFrame:(CDAdView*)cdAdView;
+- (CDAdSize) cdAdViewSize:(CDAdView*)cdAdView;
 - (void) getAdSucceeded:(CDAdView*)cdAdView;
 - (void) getAdFailed:(CDAdView*)cdAdView;
 - (void) getMrecAdSucceeded:(CDAdView*)cdAdView;
@@ -42,5 +44,6 @@
 - (void) interstitialWillDisappear:(CDAdView*)cdAdView;
 - (void) adViewWillLeaveApplication:(CDAdView*)cdAdView;
 - (void) adViewDidReceiveTapEvent:(CDAdView*)cdAdView;
+- (BOOL) allowUnsecuredImpressions:(CDAdView*)cdAdView;
 @end
 

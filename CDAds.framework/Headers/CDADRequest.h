@@ -17,7 +17,8 @@
 @property (strong, nonatomic, nonnull) NSString *placementId;
 @property (strong, nonatomic, nonnull) NSString *partnerId;
 @property (strong, readonly, nonatomic, nonnull) NSString *ver;
-@property BOOL onlySecureImpressionsAllowed;
+@property (strong, readonly, nonatomic, nonnull) NSString *site;
+@property (nonatomic) BOOL onlySecureImpressionsAllowed;
 @property BOOL locationAutoUpdateEnabled;
 @property (strong, nonatomic, nonnull) CDGeoInfo *geoInfo;
 - (BOOL)isReady;

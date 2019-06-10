@@ -27,4 +27,9 @@
 @property (nonatomic) Boolean consent;
 @property (readonly, nonatomic) Boolean geoIpLocationEnable;
 @property (nonatomic) Boolean clientHasUserTrackingPermission;
+@property (nonatomic, nonnull) NSString* appName;
+@property (nonatomic, nonnull) NSString* appKey;
+@property (nonatomic, nonnull) NSString* secretKey;
+@property (nonatomic, nonnull) NSString* host;
+
 @end

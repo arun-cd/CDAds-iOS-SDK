@@ -44,12 +44,19 @@ struct CDAdSize {
 
 /// iPhone, iPod and ipad Touch ad size. Typically 320x50.
 CDAD_EXTERN CDAdSize const kCDAdSizeBanner320x50;
+CDAD_EXTERN CDAdSize const kCDAdSizeBanner320x100;
+CDAD_EXTERN CDAdSize const kCDAdSizeBanner728x90;
+CDAD_EXTERN CDAdSize const kCDAdSizeBanner728x250;
 
 /// smaller width version of kGADAdSizeBanner320x50. Typically 300x100.
 CDAD_EXTERN CDAdSize const kCDAdSizeBanner300x50;
 
 /// Medium Rectangle size for the iPhone, iPod and ipad 300x250.
 CDAD_EXTERN CDAdSize const kCDAdSizeBanner300x250;
+
+/// Interstitial Rectangle size for the iPhone, iPod and ipad 320x480.
+CDAD_EXTERN CDAdSize const kCDAdSizeBanner320x480;
+CDAD_EXTERN CDAdSize const kCDAdSizeBanner768x1024;
 
 CDAD_ASSUME_NONNULL_END
 
