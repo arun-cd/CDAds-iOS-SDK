@@ -16,6 +16,7 @@
 
 UIInterfaceOrientation CDInterfaceOrientation(void);
 UIWindow *CDKeyWindow(void);
+UIStatusBarManager *CDStatusBarManager(void);
 CGFloat CDStatusBarHeight(void);
 CGRect CDApplicationFrame(void);
 CGRect CDScreenBounds(void);

@@ -27,6 +27,8 @@
 - (void) getMrecAdSucceeded:(CDAdView*)cdAdView;
 - (void) getMrecAdFailed:(CDAdView*)cdAdView;
 - (void) mrecActivated:(CDAdView*)cdAdView;
+- (void) mrecCompleted:(CDAdView*)cdAdView;
+- (void) allMrecCompleted:(CDAdView*)cdAdView;
 - (void) getInterstitialAdSucceeded:(CDAdView*)cdAdView;
 - (void) getInterstitialAdFailed:(CDAdView*)cdAdView;
 - (void) interstitialActivated:(CDAdView*)cdAdView;
@@ -45,5 +47,7 @@
 - (void) adViewWillLeaveApplication:(CDAdView*)cdAdView;
 - (void) adViewDidReceiveTapEvent:(CDAdView*)cdAdView;
 - (BOOL) allowUnsecuredImpressions:(CDAdView*)cdAdView;
+- (BOOL) allowAutomaticRefreshAds:(CDAdView*)cdAdView;
+- (BOOL) closeable:(CDAdView*)cdAdView;
 @end
 

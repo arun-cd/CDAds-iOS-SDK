@@ -2,7 +2,7 @@
 //  PendingLocations+CoreDataProperties.h
 //  
 //
-//  Created by Arun Gupta on 05/03/19.
+//  Created by Arun Gupta on 6/26/24.
 //
 //  This file was automatically generated and should not be edited.
 //
@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PendingLocations (CoreDataProperties)
 
-+ (NSFetchRequest<PendingLocations *> *)fetchRequest;
++ (NSFetchRequest<PendingLocations *> *)fetchRequest NS_SWIFT_NAME(fetchRequest());
 
 @property (nonatomic) double altitude;
 @property (nonatomic) int16_t connectiontype;

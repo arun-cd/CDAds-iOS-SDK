@@ -53,3 +53,20 @@ typedef enum CDLogLevels
     CDLogLevelFatal        = 60,
     CDLogLevelOff        = 70
 } CDLogLevel;
+
+typedef enum CDNativeAdDataTypes
+{
+    CDNativeAdDataTypeSponsored = 1,
+    CDNativeAdDataTypeDescription = 2,
+    CDNativeAdDataTypeRating = 3,
+    CDNativeAdDataTypeLikes = 4,
+    CDNativeAdDataTypeDownloads = 5,
+    CDNativeAdDataTypePrice = 6,
+    CDNativeAdDataTypeSalePrice = 7,
+    CDNativeAdDataTypePhone = 8,
+    CDNativeAdDataTypeAddress = 9,
+    CDNativeAdDataTypeDescription2 = 10,
+    CDNativeAdDataTypeDisplayUrl = 11,
+    CDNativeAdDataTypeCtaText = 12,
+    CDNativeAdDataTypeOther = 501
+} CDNativeAdDataType;

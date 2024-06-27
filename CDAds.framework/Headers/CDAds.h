@@ -37,7 +37,7 @@ FOUNDATION_EXPORT const unsigned char CDAdsVersionString[];
 -(void)cdAdsDidUpdateLocation:(CLLocation *)location;
 -(void)cdadsLocationServicesDidFailWithError:(NSError *)error;
 -(void)cdadsNetworkReachabilityChanged:(NSString*)status;
--(void)beaconDetected;
+-(void)cdAdsRefreshConsole;
 @end
 
 

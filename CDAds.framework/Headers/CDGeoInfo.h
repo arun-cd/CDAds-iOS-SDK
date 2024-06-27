@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface CDGeoInfo : NSObject <NSCoding>
+@interface CDGeoInfo : NSObject <NSSecureCoding>
 @property float lat;
 @property float lon;
 @property NSInteger type;
