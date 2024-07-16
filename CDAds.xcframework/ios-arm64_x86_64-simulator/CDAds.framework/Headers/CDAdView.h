@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CDAds/CDAdViewDelegate.h>
+#import "CDAdViewDelegate.h"
 
 @interface CDAdView : UIView
 @property (readonly) BOOL isInterstitialReady;

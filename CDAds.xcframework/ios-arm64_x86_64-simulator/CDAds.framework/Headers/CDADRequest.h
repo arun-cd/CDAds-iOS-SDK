@@ -4,8 +4,8 @@
 //  Created by Arun Gupta on 15/01/19.
 //  Copyright (c) 2019 Arun Gupta. All rights reserved.
 //
-#import <CDAds/CDDeviceInfo.h>
-#import <CDAds/CDGeoInfo.h>
+#import "CDDeviceInfo.h"
+#import "CDGeoInfo.h"
 
 @interface CDADRequest : NSObject
 @property (strong, nonatomic, nonnull) NSString *targetingAge;
@@ -16,6 +16,7 @@
 @property (strong, nonatomic, nonnull) NSString *keyword;
 @property (strong, nonatomic, nonnull) NSString *placementId;
 @property (strong, nonatomic, nonnull) NSString *partnerId;
+@property (strong, nonatomic, nonnull) NSString *partnerKey;
 @property (strong, readonly, nonatomic, nonnull) NSString *ver;
 @property (strong, readonly, nonatomic, nonnull) NSString *site;
 @property (nonatomic) BOOL onlySecureImpressionsAllowed;

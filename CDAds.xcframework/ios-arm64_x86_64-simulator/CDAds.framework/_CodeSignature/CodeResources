@@ -8,10 +8,6 @@
 		<data>
 		KLVLgm3iiCoLtexGiV1YAaWIX0M=
 		</data>
-		<key>CDAdsBundle.bundle/CDAdsBundle</key>
-		<data>
-		A2nwTLBx3sT3Hcg64TLQTmH0hsM=
-		</data>
 		<key>CDAdsBundle.bundle/CDCloseBtn.tiff</key>
 		<data>
 		eZLmLUT3nY63v9HJU3gII3iqm5c=
@@ -44,10 +40,6 @@
 		<data>
 		pdfkZAY4zjunS4jwf3QBqjnxaHs=
 		</data>
-		<key>CDAdsBundle.bundle/Info.plist</key>
-		<data>
-		qkpv75xJzZjquaXelQi2f/wSczA=
-		</data>
 		<key>CDAdsBundle.bundle/PendingLocations+CoreDataClass.h</key>
 		<data>
 		WGmhwraz7EwlPgD1unualyF6J5Y=
@@ -55,10 +47,6 @@
 		<key>CDAdsBundle.bundle/PendingLocations+CoreDataProperties.h</key>
 		<data>
 		L7VoLYX0NQSLwkMPMnPYu9YKi/c=
-		</data>
-		<key>CDAdsBundle.bundle/_CodeSignature/CodeResources</key>
-		<data>
-		YC8bEJUEO3dLRQWddUmBYXNcSOA=
 		</data>
 		<key>CDAdsBundle.bundle/cdads+CoreDataModel.h</key>
 		<data>
@@ -140,13 +128,6 @@
 			3zFxYkd0yIIFvlsOZDDJouH8gkcb44IWoAt/zy3uPzQ=
 			</data>
 		</dict>
-		<key>CDAdsBundle.bundle/CDAdsBundle</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sWxgq75TddqPAWAm6Fj+nVlFXOl30cNmvSNsDgc6k54=
-			</data>
-		</dict>
 		<key>CDAdsBundle.bundle/CDCloseBtn.tiff</key>
 		<dict>
 			<key>hash2</key>
@@ -203,13 +184,6 @@
 			PIFzN6wh55Y79wHW8xW7A0lM00rJ4OtNWwj+T3vHxOU=
 			</data>
 		</dict>
-		<key>CDAdsBundle.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3SLVxaL70H8oWIOxrNpQNPGdqFi6x+FMi4TorKhFPM8=
-			</data>
-		</dict>
 		<key>CDAdsBundle.bundle/PendingLocations+CoreDataClass.h</key>
 		<dict>
 			<key>hash2</key>
@@ -222,13 +196,6 @@
 			<key>hash2</key>
 			<data>
 			8NElMECLK+rKHZcvK/tJLBh6sbw61ELrEqB06a+hmdU=
-			</data>
-		</dict>
-		<key>CDAdsBundle.bundle/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			u4/opJqROi0wA7LPPkzIddHGG9tzCAAHQDfvU4VCoSY=
 			</data>
 		</dict>
 		<key>CDAdsBundle.bundle/cdads+CoreDataModel.h</key>

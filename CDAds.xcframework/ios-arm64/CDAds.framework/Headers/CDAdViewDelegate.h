@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import <CDAds/CDGeoInfo.h>
+#import "CDGeoInfo.h"
 @class CDAdView;
-#import <CDAds/CDAdSize.h>
+#import "CDAdSize.h"
 
 
 @protocol CDAdViewDelegate <NSObject>
@@ -20,6 +20,8 @@
 - (NSString*)placementId:(CDAdView*)cdAdView;
 - (NSString*)partnerId:(CDAdView*)cdAdView;
 - (UIViewController *) applicationUIViewController:(CDAdView*)cdAdView;
+
+@optional
 - (CGRect) cdAdViewFrame:(CDAdView*)cdAdView;
 - (CDAdSize) cdAdViewSize:(CDAdView*)cdAdView;
 - (void) getAdSucceeded:(CDAdView*)cdAdView;
@@ -28,13 +30,11 @@
 - (void) getMrecAdFailed:(CDAdView*)cdAdView;
 - (void) mrecActivated:(CDAdView*)cdAdView;
 - (void) mrecCompleted:(CDAdView*)cdAdView;
-- (void) allMrecCompleted:(CDAdView*)cdAdView;
 - (void) getInterstitialAdSucceeded:(CDAdView*)cdAdView;
 - (void) getInterstitialAdFailed:(CDAdView*)cdAdView;
 - (void) interstitialActivated:(CDAdView*)cdAdView;
+- (void) allMrecCompleted:(CDAdView*)cdAdView;
 - (void) interstitialClosed:(CDAdView*)cdAdView;
-
-@optional
 - (NSDictionary*) targetingParameters:(CDAdView*)cdAdView;
 - (UIColor*) textAdFontColor:(CDAdView*)cdAdView;
 - (UIColor*) backgroundColor:(CDAdView*)cdAdView;

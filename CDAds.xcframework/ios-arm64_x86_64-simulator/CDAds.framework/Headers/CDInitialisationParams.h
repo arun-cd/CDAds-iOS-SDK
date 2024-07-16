@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import <CDAds/CDADDefines.h>
+#import "CDADDefines.h"
 
 @interface CDInitialisationParams : NSObject
 

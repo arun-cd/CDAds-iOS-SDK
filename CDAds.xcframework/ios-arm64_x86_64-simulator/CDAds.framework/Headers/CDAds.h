@@ -19,6 +19,26 @@
 #import <CDAds/CDAdViewDelegate.h>
 #import <CDAds/CDGlobal.h>
 #import <CDAds/CDADRequestError.h>
+#import <CDAds/CDStaticNativeAdRenderer.h>
+#import <CDAds/CDNativeAdRequest.h>
+#import <CDAds/CDClientAdPositioning.h>
+#import <CDAds/CDNativeAdRenderer.h>
+#import <CDAds/CDNativeAdError.h>
+#import <CDAds/CDNativeAdDelegate.h>
+#import <CDAds/CDNativeAdConstants.h>
+#import <CDAds/CDNativeAdRendererSettings.h>
+#import <CDAds/CDNativeAdRequestTargeting.h>
+#import <CDAds/CDAdPositioning.h>
+#import <CDAds/CDNativeAdRendererSettings.h>
+#import <CDAds/CDTableViewAdPlacer.h>
+#import <CDAds/CDStreamAdPlacer.h>
+#import <CDAds/CDNativeAdRendering.h>
+#import <CDAds/CDNativeAd.h>
+#import <CDAds/CDNativeVideoAdRendererSettings.h>
+#import <CDAds/CDServerAdPositioning.h>
+#import <CDAds/CDCollectionViewAdPlacer.h>
+#import <CDAds/CDNativeVideoAdRenderer.h>
+#import <CDAds/CDNativeAdRendererConfiguration.h>
 
     //! Project version number for CDAds.
 FOUNDATION_EXPORT double CDAdsVersionNumber;
