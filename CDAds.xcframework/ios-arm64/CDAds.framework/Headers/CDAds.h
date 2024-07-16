@@ -39,6 +39,7 @@
 #import <CDAds/CDCollectionViewAdPlacer.h>
 #import <CDAds/CDNativeVideoAdRenderer.h>
 #import <CDAds/CDNativeAdRendererConfiguration.h>
+#import <CDAds/CDStaticNativeAdRendererSettings.h>
 
     //! Project version number for CDAds.
 FOUNDATION_EXPORT double CDAdsVersionNumber;
