@@ -7,39 +7,39 @@
     //
 
 
-#import <CDAds/CDAdSize.h>
-#import <CDAds/CDADRequest.h>
-#import <CDAds/CDDeviceInfo.h>
-#import <CDAds/CDInitialisationParams.h>
-#import <CDAds/CDGeoInfo.h>
-#import <CDAds/CDAdSize.h>
+#import "CDAdSize.h"
+#import "CDADRequest.h"
+#import "CDDeviceInfo.h"
+#import "CDInitialisationParams.h"
+#import "CDGeoInfo.h"
+#import "CDAdSize.h"
 #import <CoreLocation/CoreLocation.h>
-#import <CDAds/CDADDefines.h>
-#import <CDAds/CDAdView.h>
-#import <CDAds/CDAdViewDelegate.h>
-#import <CDAds/CDGlobal.h>
-#import <CDAds/CDADRequestError.h>
-#import <CDAds/CDStaticNativeAdRenderer.h>
-#import <CDAds/CDNativeAdRequest.h>
-#import <CDAds/CDClientAdPositioning.h>
-#import <CDAds/CDNativeAdRenderer.h>
-#import <CDAds/CDNativeAdError.h>
-#import <CDAds/CDNativeAdDelegate.h>
-#import <CDAds/CDNativeAdConstants.h>
-#import <CDAds/CDNativeAdRendererSettings.h>
-#import <CDAds/CDNativeAdRequestTargeting.h>
-#import <CDAds/CDAdPositioning.h>
-#import <CDAds/CDNativeAdRendererSettings.h>
-#import <CDAds/CDTableViewAdPlacer.h>
-#import <CDAds/CDStreamAdPlacer.h>
-#import <CDAds/CDNativeAdRendering.h>
-#import <CDAds/CDNativeAd.h>
-#import <CDAds/CDNativeVideoAdRendererSettings.h>
-#import <CDAds/CDServerAdPositioning.h>
-#import <CDAds/CDCollectionViewAdPlacer.h>
-#import <CDAds/CDNativeVideoAdRenderer.h>
-#import <CDAds/CDNativeAdRendererConfiguration.h>
-#import <CDAds/CDStaticNativeAdRendererSettings.h>
+#import "CDADDefines.h"
+#import "CDAdView.h"
+#import "CDAdViewDelegate.h"
+#import "CDGlobal.h"
+#import "CDADRequestError.h"
+#import "CDStaticNativeAdRenderer.h"
+#import "CDNativeAdRequest.h"
+#import "CDClientAdPositioning.h"
+#import "CDNativeAdRenderer.h"
+#import "CDNativeAdError.h"
+#import "CDNativeAdDelegate.h"
+#import "CDNativeAdConstants.h"
+#import "CDNativeAdRendererSettings.h"
+#import "CDNativeAdRequestTargeting.h"
+#import "CDAdPositioning.h"
+#import "CDNativeAdRendererSettings.h"
+#import "CDTableViewAdPlacer.h"
+#import "CDStreamAdPlacer.h"
+#import "CDNativeAdRendering.h"
+#import "CDNativeAd.h"
+#import "CDNativeVideoAdRendererSettings.h"
+#import "CDServerAdPositioning.h"
+#import "CDCollectionViewAdPlacer.h"
+#import "CDNativeVideoAdRenderer.h"
+#import "CDNativeAdRendererConfiguration.h"
+#import "CDStaticNativeAdRendererSettings.h"
 
     //! Project version number for CDAds.
 FOUNDATION_EXPORT double CDAdsVersionNumber;
@@ -47,7 +47,7 @@ FOUNDATION_EXPORT double CDAdsVersionNumber;
     //! Project version string for CDAds.
 FOUNDATION_EXPORT const unsigned char CDAdsVersionString[];
 
-    // In this header, you should import all the public headers of your framework using statements like #import <CDAds/PublicHeader.h>
+    // In this header, you should import all the public headers of your framework using statements like #import "PublicHeader.h>
 
 #ifndef _CDAds_
 #define _CDAds_
