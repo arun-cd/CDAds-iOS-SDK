@@ -247,6 +247,10 @@
 	<dict>
 		<key>CDAdsBundle.bundle/CDAdBrowserController.nib</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			KLVLgm3iiCoLtexGiV1YAaWIX0M=
+			</data>
 			<key>hash2</key>
 			<data>
 			3zFxYkd0yIIFvlsOZDDJouH8gkcb44IWoAt/zy3uPzQ=
@@ -254,6 +258,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/CDCloseBtn.tiff</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			eZLmLUT3nY63v9HJU3gII3iqm5c=
+			</data>
 			<key>hash2</key>
 			<data>
 			o5vZ7wGtdkmTIFTF7czy9WPbQ3AQg6YcLwDSUPtwv6c=
@@ -261,6 +269,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/CDCloseButtonX.tiff</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			5lLakw1J92WwGaCeOW6kFMaDuRA=
+			</data>
 			<key>hash2</key>
 			<data>
 			uHfAh+RH4bm4YLDfLj6gxvPyRfb6aXOgiDr7iKVm8U8=
@@ -268,6 +280,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/CDCountdownTimer.html</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			AfjuesNM1EMzmyn9FSoJ9syt2Cs=
+			</data>
 			<key>hash2</key>
 			<data>
 			V77HMX8p8AuwKuWrQ6wbuB91kjbhUPvJBMmc8yLdjhk=
@@ -275,6 +291,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/CDDAAIcon.tiff</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			L+ypMKvSxobwScZwSlZqnMgZqt4=
+			</data>
 			<key>hash2</key>
 			<data>
 			SMDGAeDzaQl74fwl2jvC5WQHABSTps04YQ3wKqzXxTM=
@@ -282,6 +302,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/CDMutedBtn.tiff</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			IVzjYFP3jAX6ZDcwguMeAy/gQFA=
+			</data>
 			<key>hash2</key>
 			<data>
 			KCeqMuJf9x9gWz/VuFmiEFgDrFzgBT0QQIoqJApXbB4=
@@ -289,6 +313,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/CDPlayBtn.tiff</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			410WhO3ElKMpcxWVoN8Z8yylCP8=
+			</data>
 			<key>hash2</key>
 			<data>
 			A4fYslfjwTAuLCdTcEy/Og8o6TENuly1FKjzAXqeaZk=
@@ -296,6 +324,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/CDUnmutedBtn.tiff</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			L0sPoMk5bJqySYunUY6DO6++oFw=
+			</data>
 			<key>hash2</key>
 			<data>
 			c2PX/YKvQxqf2LLOLJ9Ds0+syJQvuS3XHGJn/iyC7QI=
@@ -303,6 +335,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/CountryCodes.plist</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			pdfkZAY4zjunS4jwf3QBqjnxaHs=
+			</data>
 			<key>hash2</key>
 			<data>
 			PIFzN6wh55Y79wHW8xW7A0lM00rJ4OtNWwj+T3vHxOU=
@@ -310,6 +346,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/PendingLocations+CoreDataClass.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			WGmhwraz7EwlPgD1unualyF6J5Y=
+			</data>
 			<key>hash2</key>
 			<data>
 			ba6Ys9JBy7pRyzfqj2ZYD4BnmEaNYuFkAdyM/m+JkE8=
@@ -317,6 +357,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/PendingLocations+CoreDataProperties.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			L7VoLYX0NQSLwkMPMnPYu9YKi/c=
+			</data>
 			<key>hash2</key>
 			<data>
 			8NElMECLK+rKHZcvK/tJLBh6sbw61ELrEqB06a+hmdU=
@@ -324,6 +368,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/cdads+CoreDataModel.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			UQ10O/vGErmVq0pQBAuTEmLO/dk=
+			</data>
 			<key>hash2</key>
 			<data>
 			fsbuCdOUEZxtwGMjGeOak2M+Uv6vB1k2hH0Qv1jQ5AY=
@@ -331,6 +379,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/cdads.momd/VersionInfo.plist</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			YtNYvjuSiXJFI/k6uqKm+zypx8I=
+			</data>
 			<key>hash2</key>
 			<data>
 			kalgDLyk6VvGUuVOlaD84j+fGlOEH4rK2CPM4tK4AEQ=
@@ -338,6 +390,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/cdads.momd/cdads.mom</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ZKu7aiCytg3ARJOnfeAwZLv4PWw=
+			</data>
 			<key>hash2</key>
 			<data>
 			I3M6I83R05Br1NDcxTEJcIl1x32WiFHeMfgdyugT4tA=
@@ -345,6 +401,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/cdads.momd/cdads.omo</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			mIsnGZrUH9yxDuL1/fl2XE7RZ2Y=
+			</data>
 			<key>hash2</key>
 			<data>
 			4Wv9a9qRLZLO6sUdlYjFmQQc3r44GnCKN3f+ZkD5eYg=
@@ -352,6 +412,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/close.png</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			qo6eWTqhYukd/3WxugCY3nKid1s=
+			</data>
 			<key>hash2</key>
 			<data>
 			sGXVSg5z+uxTC3u72NO8aZwzcJvexCVX5Mb2zJO5hBE=
@@ -359,6 +423,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/en.lproj/CDAdsLocalization.strings</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Z40ei8dzdm20q60sAkbq0HyzqwY=
+			</data>
 			<key>hash2</key>
 			<data>
 			3OEXV2pnO20FRgV4Phpfz6THnK+XKAfPuscSrc5fCjg=
@@ -368,6 +436,10 @@
 		</dict>
 		<key>CDAdsBundle.bundle/ja.lproj/CDAdsLocalization.strings</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			DbrY8c+x/v3ZQStTFt52W46jS9I=
+			</data>
 			<key>hash2</key>
 			<data>
 			LSdGuSBSvv7d6zD86yIhOQZ2ULlSSeAFEvtADgGU5Uo=
@@ -377,6 +449,10 @@
 		</dict>
 		<key>Headers/CDADDefines.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			pUXVB9E14SPM+s2GANq2vH3I24M=
+			</data>
 			<key>hash2</key>
 			<data>
 			Swhp4bh4xGnyPpy7mX0nYitUl1QvxYdNX0OcB56gPJE=
@@ -384,6 +460,10 @@
 		</dict>
 		<key>Headers/CDADRequest.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			X/HFxQprz2sPOZvNWsHYIo5doWU=
+			</data>
 			<key>hash2</key>
 			<data>
 			1s1eN3gxybRvSr6mweh+lB63nAO+QkQZPYDKF7Dsb1o=
@@ -391,6 +471,10 @@
 		</dict>
 		<key>Headers/CDADRequestError.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			2bfke7KDgoPcG7/gXw8tXnzsPZg=
+			</data>
 			<key>hash2</key>
 			<data>
 			8jT87VRHmLxfZuyl/wPEohZ0uc8WklAH8sC/PGL3llM=
@@ -398,6 +482,10 @@
 		</dict>
 		<key>Headers/CDAdPositioning.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Rn4ECDixhRvutcqY5Oq2WFdouBM=
+			</data>
 			<key>hash2</key>
 			<data>
 			9UIP5ad9sO8CA7i0G+/ciS6ywjFwYpx+n0pc5snOf9Q=
@@ -405,6 +493,10 @@
 		</dict>
 		<key>Headers/CDAdSize.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Oixaabrtw6TsBE3QR5MBlEvG2hc=
+			</data>
 			<key>hash2</key>
 			<data>
 			1J4mL0x5M1qnVrXH6q+AWKfsjcp6+j/9J/KvVc8q2lc=
@@ -412,6 +504,10 @@
 		</dict>
 		<key>Headers/CDAdView.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			uVHUIetIx/S194RLwvoWvJcR9Gs=
+			</data>
 			<key>hash2</key>
 			<data>
 			INF9JF2Mj99qLKe6FPuEm2SpocVuidwcicAgLs3jbSk=
@@ -419,6 +515,10 @@
 		</dict>
 		<key>Headers/CDAdViewDelegate.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			QFkt5F/h4cJAv91TBcpZLHvKpzk=
+			</data>
 			<key>hash2</key>
 			<data>
 			cxWoAT5fE5bbbp7b+xI8P7OvtZzeBSoyesWg1ed+kkE=
@@ -426,6 +526,10 @@
 		</dict>
 		<key>Headers/CDAds.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			TJnr3n+RYB55qHMjdy1cq37KMx4=
+			</data>
 			<key>hash2</key>
 			<data>
 			WZSsq310x2ivMezXR7XAjR1kql0nC1L+6ZfpEdEUWps=
@@ -433,6 +537,10 @@
 		</dict>
 		<key>Headers/CDClientAdPositioning.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			mHIxZ4VVSM0aub3DEGtzGD1u93E=
+			</data>
 			<key>hash2</key>
 			<data>
 			cZCIFxKzN2V6QE5PgGilPDhambb3jWuXCIe92kllCKM=
@@ -440,6 +548,10 @@
 		</dict>
 		<key>Headers/CDCollectionViewAdPlacer.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			TSir4+fxPl+7i28aFZAqizP2eow=
+			</data>
 			<key>hash2</key>
 			<data>
 			PWFQ5DOTXXhxD4tmB7O60xG67zbnsC3Yy+AHfAt3EBg=
@@ -447,6 +559,10 @@
 		</dict>
 		<key>Headers/CDDeviceInfo.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			GBo+hZ8HDp0AVrZzpP5wG/KrHLw=
+			</data>
 			<key>hash2</key>
 			<data>
 			4GmxDNLn2Jt0Q36IpaqryoR8A5C5KEE7wWyMdwAYThI=
@@ -454,6 +570,10 @@
 		</dict>
 		<key>Headers/CDGeoInfo.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			TXrdFBtD5wxjZ86jgWRkaii3WOE=
+			</data>
 			<key>hash2</key>
 			<data>
 			xuxajjxbmUOkwZrsLLrCq4CPgOpzQY86S1z28EHwcgI=
@@ -461,6 +581,10 @@
 		</dict>
 		<key>Headers/CDGlobal.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			pQS0RdVQnNY5MhPkvo/B10c4X2o=
+			</data>
 			<key>hash2</key>
 			<data>
 			2ZVIXJN+tJlfdhuBV41YQ2+OEowmopEnO2ZMVEi3yOA=
@@ -468,6 +592,10 @@
 		</dict>
 		<key>Headers/CDInitialisationParams.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			fnpowgb7y09HG7TI9p2WQitE00A=
+			</data>
 			<key>hash2</key>
 			<data>
 			C3wxSAsoTeHx0wWQaygnwCGlFPMowqnphxa2uu/M+k4=
@@ -475,6 +603,10 @@
 		</dict>
 		<key>Headers/CDNativeAd.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			0XngYuv2aHOXtAEkjt9h3F1qkuI=
+			</data>
 			<key>hash2</key>
 			<data>
 			axrewu6fULSPfeFnJbe9ZRRa+WAnPRjkh43drWR7XhU=
@@ -482,6 +614,10 @@
 		</dict>
 		<key>Headers/CDNativeAdConstants.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			yaGRcCX9U7O6QegXwRbbWtg5IN4=
+			</data>
 			<key>hash2</key>
 			<data>
 			CV3ZaxF8tUUmbXMznON1NwPoLNqq4dawjwIO8g9Iqic=
@@ -489,6 +625,10 @@
 		</dict>
 		<key>Headers/CDNativeAdDelegate.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			eAFL9c8OPZ8zJgYFRZc9CSIxmKo=
+			</data>
 			<key>hash2</key>
 			<data>
 			Mvru6MFMixDPbvY//eqLXAY0gh0eAxAO+T1kT7jm/sg=
@@ -496,6 +636,10 @@
 		</dict>
 		<key>Headers/CDNativeAdError.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			DwaeEWUMefuwkXV50/dcssJuDU4=
+			</data>
 			<key>hash2</key>
 			<data>
 			1my5jJTbtxyUniDLnIKrtu1M0xffL1VdhzCjpjgXiJg=
@@ -503,6 +647,10 @@
 		</dict>
 		<key>Headers/CDNativeAdRenderer.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			EHV+UxH221W5StL2OmHWxKSuPi0=
+			</data>
 			<key>hash2</key>
 			<data>
 			RYWNF8IJ2Lj9lD4vm/jOFzNT/9+Pc8B+xJVtDCL4Lis=
@@ -510,6 +658,10 @@
 		</dict>
 		<key>Headers/CDNativeAdRendererConfiguration.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			R4ZEdfGPmOZ3i7YboRWjJDCXZWo=
+			</data>
 			<key>hash2</key>
 			<data>
 			q6LLGwddI1AXETxhpPXRixHdv9OWVKVElzkh8aQxlwM=
@@ -517,6 +669,10 @@
 		</dict>
 		<key>Headers/CDNativeAdRendererSettings.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			NrH4csdLkf6zfO+hlje5Wr9MgUw=
+			</data>
 			<key>hash2</key>
 			<data>
 			nT3w/Q6qtqksToZLFWOehWvz9kP5RHBaKErKAbwD8kA=
@@ -524,6 +680,10 @@
 		</dict>
 		<key>Headers/CDNativeAdRendering.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			NGLEy6+CVG1ECEVh2fElNNzL64k=
+			</data>
 			<key>hash2</key>
 			<data>
 			bDSOK7RxNzUiir2I72zkMFkoP9MX0T9jdU/L7l9ld0o=
@@ -531,6 +691,10 @@
 		</dict>
 		<key>Headers/CDNativeAdRequest.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			JUn/rvegCihaLVBESunQNBROvws=
+			</data>
 			<key>hash2</key>
 			<data>
 			cVqKAEbkBDoUUgvJG4JXq+vVXoXai5ndU2/bHqB98LY=
@@ -538,6 +702,10 @@
 		</dict>
 		<key>Headers/CDNativeAdRequestTargeting.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			4OI7yj9Y/J79DK1I58NNwQoM8Qo=
+			</data>
 			<key>hash2</key>
 			<data>
 			JCBvVTxmD2SbjaRk7E1EiYaYaWzK1yFkyXUUBmO1W3o=
@@ -545,6 +713,10 @@
 		</dict>
 		<key>Headers/CDNativeVideoAdRenderer.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			dyoWbFdX7Z5yvozMUDMWHpfTo1c=
+			</data>
 			<key>hash2</key>
 			<data>
 			mfEZ8t48ucELvTiJxhJvbIfUTlojnwvEsc6o49oXwbs=
@@ -552,6 +724,10 @@
 		</dict>
 		<key>Headers/CDNativeVideoAdRendererSettings.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			rLQu9x6BL3i7Wrw1zdzGPiq3wmo=
+			</data>
 			<key>hash2</key>
 			<data>
 			XMZIUgBt2wvY/dGbxkj57yNZAO55hpdqFttqB4eymmY=
@@ -559,6 +735,10 @@
 		</dict>
 		<key>Headers/CDServerAdPositioning.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			aVj5/wX5cGKrg0W0uzznZxKVHN0=
+			</data>
 			<key>hash2</key>
 			<data>
 			IDbHYrlQwc1/N6/yexHqj2nTi+VSSgHjOKcQbfehrbM=
@@ -566,6 +746,10 @@
 		</dict>
 		<key>Headers/CDStaticNativeAdRenderer.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			d4pBloVV0j3X0jCX8wDp/c/ZEWg=
+			</data>
 			<key>hash2</key>
 			<data>
 			4otj/qvSQN+8L2KgvhvFqIhGT5gV2eUBJnTqujk5kOY=
@@ -573,6 +757,10 @@
 		</dict>
 		<key>Headers/CDStaticNativeAdRendererSettings.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Oh7WdkGAqZtu4/Rzue4kT038rh0=
+			</data>
 			<key>hash2</key>
 			<data>
 			zwIfIm5Yac2BwpwQDlU0UkH4hgcjw5w4/zgohAZhIoE=
@@ -580,6 +768,10 @@
 		</dict>
 		<key>Headers/CDStreamAdPlacer.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			gqPIfNxiF1LskZPPPQfRVPfARBk=
+			</data>
 			<key>hash2</key>
 			<data>
 			cj9JeWO1Hw4zDv+PulVypL0rZB3QK9qN3hRNmkWHFLo=
@@ -587,6 +779,10 @@
 		</dict>
 		<key>Headers/CDTableViewAdPlacer.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/1a/oaZabJE43Mg7O/aS11wHORY=
+			</data>
 			<key>hash2</key>
 			<data>
 			gZBpwuRY1gzRsUu86fLY9wPsDPOLzGSYu5xxRRHLgsw=
@@ -594,6 +790,10 @@
 		</dict>
 		<key>LICENSE</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			e9qgkc4IEXkhLxChjv5ufGcfoM0=
+			</data>
 			<key>hash2</key>
 			<data>
 			yCg6aOUQ3srZdu2MtpBmh9H272AGS5vzN6aEJgEGYVQ=
@@ -601,6 +801,10 @@
 		</dict>
 		<key>MRAID.bundle/mraid.js</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			sYlNsGv8sLfoYbhuwI2q9WeVI9w=
+			</data>
 			<key>hash2</key>
 			<data>
 			1xtdjoS34sa56rWbdn5Em3ufCAl040SmgvltjNs55RQ=
@@ -608,6 +812,10 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ZbOm1YSMTE0egoICNXcWn364fJQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			HYh1yevlo+gsTobr7t7lfXPn8lXiGTGcnkHKJLP9f2g=
@@ -615,6 +823,10 @@
 		</dict>
 		<key>cdads.momd/VersionInfo.plist</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			YtNYvjuSiXJFI/k6uqKm+zypx8I=
+			</data>
 			<key>hash2</key>
 			<data>
 			kalgDLyk6VvGUuVOlaD84j+fGlOEH4rK2CPM4tK4AEQ=
@@ -622,6 +834,10 @@
 		</dict>
 		<key>cdads.momd/cdads.mom</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			RAu/ElmkCYxLxhVCnfr3+friQ0g=
+			</data>
 			<key>hash2</key>
 			<data>
 			ByvO8n/WvihRKzMmwWeoZG3cKVTU6NngQACgBfj0OB0=
@@ -629,6 +845,10 @@
 		</dict>
 		<key>cdads.momd/cdads.omo</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			mIsnGZrUH9yxDuL1/fl2XE7RZ2Y=
+			</data>
 			<key>hash2</key>
 			<data>
 			4Wv9a9qRLZLO6sUdlYjFmQQc3r44GnCKN3f+ZkD5eYg=
@@ -636,6 +856,10 @@
 		</dict>
 		<key>module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ZbOm1YSMTE0egoICNXcWn364fJQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			HYh1yevlo+gsTobr7t7lfXPn8lXiGTGcnkHKJLP9f2g=
