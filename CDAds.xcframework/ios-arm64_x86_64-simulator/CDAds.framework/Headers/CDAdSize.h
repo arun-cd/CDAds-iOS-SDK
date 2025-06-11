@@ -58,5 +58,10 @@ CDAD_EXTERN CDAdSize const kCDAdSizeBanner300x250;
 CDAD_EXTERN CDAdSize const kCDAdSizeBanner320x480;
 CDAD_EXTERN CDAdSize const kCDAdSizeBanner768x1024;
 
+CDAD_EXTERN CDAdSize const kCDAdSizeBanner300x600;
+CDAD_EXTERN CDAdSize const kCDAdSizeBanner1086x1086;
+CDAD_EXTERN CDAdSize const kCDAdSizeBanner970x250;
+CDAD_EXTERN CDAdSize const kCDAdSizeBanner480x320;
+
 CDAD_ASSUME_NONNULL_END
 
