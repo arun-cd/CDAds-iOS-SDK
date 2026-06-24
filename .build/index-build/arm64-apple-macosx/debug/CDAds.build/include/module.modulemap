@@ -1,0 +1,3 @@
+module CDAds {
+    header "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/index-build/arm64-apple-macosx/debug/CDAds.build/include/CDAds-Swift.h"
+}

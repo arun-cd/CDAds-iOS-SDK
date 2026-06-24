@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>com.chalkdigital.cdads.backgroundLocationTask</string>
+	</array>
+	<key>CDAdsParams</key>
+	<dict>
+		<key>CDADS_APP_NAME</key>
+		<string>CDAdsExample</string>
+		<key>CDADS_BUNDLE_ID</key>
+		<string>1210482071</string>
+		<key>CDADS_BUNDLE_ID_STRING</key>
+		<string>com.chalkdigital.newiostesterapp</string>
+		<key>CDADS_CAT</key>
+		<string>IAB1-6</string>
+		<key>CDADS_DEBUG_URL</key>
+		<string>https://nep.chalkdigital.com/xp</string>
+		<key>CDADS_PARTNER_ID</key>
+		<string>chalkboard</string>
+		<key>CDADS_PARTNER_KEY</key>
+		<string>7d95de69cfc7cc03c3a05b4fde9662b8</string>
+		<key>SERVER_PATH</key>
+		<string>/cmsdk</string>
+		<key>SERVER_URL</key>
+		<string>https://e-app.cmcd1.com</string>
+	</dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>CDAds uses your location in the background to deliver more relevant ads even when the app is not open.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>CDAds uses your location to deliver more relevant ads.</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>This identifier is used to deliver personalised ads and measure their effectiveness.</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>processing</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,229 @@
+{
+  "": {
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/primary.swiftdeps"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDABundle.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDABundle.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDABundle.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDABundle~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDABundle.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDABundle.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDACountryCodes.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDACountryCodes.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDACountryCodes.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDACountryCodes~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDACountryCodes.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDACountryCodes.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDADebugLogStore.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDADebugLogStore.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDADebugLogStore.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDADebugLogStore~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDADebugLogStore.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDADebugLogStore.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDALogger.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDALogger.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDALogger.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDALogger~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDALogger.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDALogger.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDAPlistParams.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAPlistParams.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAPlistParams.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAPlistParams~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAPlistParams.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAPlistParams.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/Interstitial/CDAInterstitialViewController.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAInterstitialViewController.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAInterstitialViewController.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAInterstitialViewController~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAInterstitialViewController.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAInterstitialViewController.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/Location/CDALocationManager.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDALocationManager.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDALocationManager.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDALocationManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDALocationManager.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDALocationManager.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/MRAID/CDAMRAIDBridge.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAMRAIDBridge.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAMRAIDBridge.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAMRAIDBridge~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAMRAIDBridge.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAMRAIDBridge.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/Networking/CDAAdServerRequest.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAAdServerRequest.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAAdServerRequest.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAAdServerRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAAdServerRequest.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAAdServerRequest.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/Networking/CDANetworkSession.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANetworkSession.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANetworkSession.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANetworkSession~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANetworkSession.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANetworkSession.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/RewardedVideo/CDARewardedVideoViewController.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDARewardedVideoViewController.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDARewardedVideoViewController.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDARewardedVideoViewController~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDARewardedVideoViewController.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDARewardedVideoViewController.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/VAST/CDAVASTModel.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAVASTModel.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAVASTModel.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAVASTModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAVASTModel.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAVASTModel.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/VAST/CDAVASTParser.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAVASTParser.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAVASTParser.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAVASTParser~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAVASTParser.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAVASTParser.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/Viewability/CDAViewabilityTracker.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAViewabilityTracker.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAViewabilityTracker.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAViewabilityTracker~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAViewabilityTracker.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAViewabilityTracker.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDABannerView.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDABannerView.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDABannerView.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDABannerView~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDABannerView.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDABannerView.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDADebugLogViewController.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDADebugLogViewController.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDADebugLogViewController.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDADebugLogViewController~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDADebugLogViewController.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDADebugLogViewController.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDADebugTrigger.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDADebugTrigger.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDADebugTrigger.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDADebugTrigger~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDADebugTrigger.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDADebugTrigger.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDAInterstitialAd.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAInterstitialAd.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAInterstitialAd.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAInterstitialAd~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAInterstitialAd.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAInterstitialAd.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDANativeAdData.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANativeAdData.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANativeAdData.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANativeAdData~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANativeAdData.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANativeAdData.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDANativeAdRequest.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANativeAdRequest.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANativeAdRequest.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANativeAdRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANativeAdRequest.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANativeAdRequest.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDAReward.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAReward.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAReward.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAReward~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAReward.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAReward.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDARewardedVideoAd.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDARewardedVideoAd.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDARewardedVideoAd.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDARewardedVideoAd~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDARewardedVideoAd.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDARewardedVideoAd.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDAds.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAds.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAds.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAds~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAds.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAds.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDAdsAdRequest.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsAdRequest.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsAdRequest.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsAdRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsAdRequest.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsAdRequest.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDAdsConfiguration.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsConfiguration.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsConfiguration.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsConfiguration~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsConfiguration.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsConfiguration.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDAdsError.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsError.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsError.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsError~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsError.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsError.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDAdsGeoInfo.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsGeoInfo.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsGeoInfo.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsGeoInfo~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsGeoInfo.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAdsGeoInfo.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/Protocols/CDABannerDelegate.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDABannerDelegate.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDABannerDelegate.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDABannerDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDABannerDelegate.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDABannerDelegate.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/Protocols/CDAInterstitialDelegate.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAInterstitialDelegate.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAInterstitialDelegate.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAInterstitialDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAInterstitialDelegate.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDAInterstitialDelegate.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/Protocols/CDANativeAdDelegate.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANativeAdDelegate.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANativeAdDelegate.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANativeAdDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANativeAdDelegate.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDANativeAdDelegate.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/Protocols/CDARewardedVideoDelegate.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDARewardedVideoDelegate.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDARewardedVideoDelegate.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDARewardedVideoDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDARewardedVideoDelegate.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/CDARewardedVideoDelegate.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/resource_bundle_accessor.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAds.build/resource_bundle_accessor.dia"
+  }
+}

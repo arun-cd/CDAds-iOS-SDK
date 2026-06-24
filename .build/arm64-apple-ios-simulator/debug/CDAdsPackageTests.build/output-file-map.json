@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAdsPackageTests.build/primary.swiftdeps"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAdsPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAdsPackageTests.build/runner.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAdsPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAdsPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAdsPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAdsPackageTests.build/runner.dia"
+  }
+}

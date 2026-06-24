@@ -1,0 +1,3 @@
+module CDAdsPackageTests {
+    header "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-ios-simulator/debug/CDAdsPackageTests.build/include/CDAdsPackageTests-Swift.h"
+}

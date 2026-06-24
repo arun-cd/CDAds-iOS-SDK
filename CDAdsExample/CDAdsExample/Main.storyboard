@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nav-001">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="nav-sc-1">
+            <objects>
+                <navigationController id="nav-001" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nav-nb-1">
+                        <rect key="frame" x="0.0" y="96" width="414" height="54"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vc-001" kind="relationship" relationship="rootViewController" id="nav-seg-1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nav-fr-1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vc-sc-1">
+            <objects>
+                <viewController id="vc-001" customClass="ViewController" customModule="CDAdsExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vc-view-1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mrec-con-1">
+                                <rect key="frame" x="57" y="323" width="300" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="mrec-h-1"/>
+                                    <constraint firstAttribute="width" constant="300" id="mrec-w-1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="banner-con-1">
+                                <rect key="frame" x="47" y="778" width="320" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="banner-h-1"/>
+                                    <constraint firstAttribute="width" constant="320" id="banner-w-1"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracking: waiting for location…" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loc-lbl-1">
+                                <rect key="frame" x="16" y="755.5" width="382" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vc-sa-1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vc-sa-1" firstAttribute="bottom" secondItem="banner-con-1" secondAttribute="bottom" id="banner-bot-1"/>
+                            <constraint firstItem="banner-con-1" firstAttribute="centerX" secondItem="vc-view-1" secondAttribute="centerX" id="banner-cx-1"/>
+                            <constraint firstItem="banner-con-1" firstAttribute="top" secondItem="loc-lbl-1" secondAttribute="bottom" constant="8" id="loc-bot-1"/>
+                            <constraint firstItem="loc-lbl-1" firstAttribute="leading" secondItem="vc-view-1" secondAttribute="leading" constant="16" id="loc-lead-1"/>
+                            <constraint firstAttribute="trailing" secondItem="loc-lbl-1" secondAttribute="trailing" constant="16" id="loc-trail-1"/>
+                            <constraint firstItem="mrec-con-1" firstAttribute="centerX" secondItem="vc-view-1" secondAttribute="centerX" id="mrec-cx-1"/>
+                            <constraint firstItem="mrec-con-1" firstAttribute="centerY" secondItem="vc-view-1" secondAttribute="centerY" id="mrec-cy-1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="banner300Container" destination="mrec-con-1" id="out-mrec-1"/>
+                        <outlet property="banner320Container" destination="banner-con-1" id="out-banner-1"/>
+                        <outlet property="locationLabel" destination="loc-lbl-1" id="out-loc-1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vc-fr-1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1284" y="375"/>
+        </scene>
+    </scenes>
+</document>
