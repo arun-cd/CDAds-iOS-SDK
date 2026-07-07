@@ -37,6 +37,9 @@ public final class CDABannerView: UIView {
         didSet { updateCloseButtonVisibility() }
     }
 
+    /// Controls how tapped ad landing pages are opened. Default `.inAppBrowser`.
+    public var landingPageBehaviour: CDALandingPageBehaviour = .inAppBrowser
+
     // MARK: - Init
 
     public init(size: CDABannerSize) {
@@ -181,8 +184,27 @@ public final class CDABannerView: UIView {
             guard let self else { return }
             self.delegate?.bannerDidCollapse(self)
         }
-        mraidBridge.onOpen = { url in
+        mraidBridge.onOpen = { [weak self] url in
+            self?.openLandingPage(url: url)
+        }
+    }
+
+    private func openLandingPage(url: URL) {
+        switch landingPageBehaviour {
+        case .deviceBrowser:
+            guard UIApplication.shared.canOpenURL(url) else { return }
+            delegate?.bannerWillLeaveApplication(self)
             UIApplication.shared.open(url)
+        case .inAppBrowser:
+            guard let presenter = window?.rootViewController else {
+                // Fallback: no presenter available — open in system browser
+                UIApplication.shared.open(url)
+                return
+            }
+            var top = presenter
+            while let presented = top.presentedViewController { top = presented }
+            let browser = CDABrowserViewController(url: url)
+            top.present(browser.wrappedInNavController(), animated: true)
         }
     }
 
@@ -192,8 +214,13 @@ public final class CDABannerView: UIView {
         // The ad server won't return a fill without a country — if we're relying on the
         // SDK's automatic location (no manual geoInfo supplied) wait briefly for reverse
         // geocoding / IP fallback to resolve it first rather than wasting the request.
+        // nil means geo timed out without a countryCode — abort rather than send a bad request.
         if request.geoInfo == nil {
-            _ = await CDAds.shared.location.waitForGeoReady()
+            guard await CDAds.shared.location.waitForGeoReady() != nil else {
+                let error = CDAdsError(.invalidRequest, "Country code unavailable — ad request aborted")
+                delegate?.bannerDidFailToLoad(self, error: error)
+                return
+            }
         }
 
         do {
@@ -297,10 +324,7 @@ extension CDABannerView: WKNavigationDelegate {
         // External navigation = user tapped the ad
         decisionHandler(.cancel)
         delegate?.bannerDidReceiveTap(self)
-        if UIApplication.shared.canOpenURL(url) {
-            delegate?.bannerWillLeaveApplication(self)
-            UIApplication.shared.open(url)
-        }
+        openLandingPage(url: url)
     }
 }
 

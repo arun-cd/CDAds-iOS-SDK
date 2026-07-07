@@ -1,6 +1,6 @@
 {
   "": {
-    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAdsPackageTests.build/master.swiftdeps"
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAdsPackageTests.build/primary.swiftdeps"
   },
   "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAdsPackageTests.derived/runner.swift": {
     "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAdsPackageTests.build/runner.d",

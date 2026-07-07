@@ -74,17 +74,65 @@ public final class CDALocationManager: NSObject {
     /// the user answers the permission prompt, leaving the IP blank for the rest of the
     /// session otherwise). Every ad request gives the IP fetch another chance to happen.
     func waitForGeoReady(timeout: TimeInterval = 5.0) async -> CDAdsGeoInfo? {
-        if let loc = lastKnownLocation, loc.countryCode != nil { return loc }
-        if !Self.isPublicIPAvailable {
-            await fetchPublicIP()
+        // When tracking is disabled and the user has never been asked, show the permission
+        // dialog now (ad requests need location too) and wait for their response.
+        // Once status moves away from .notDetermined, retry the full resolution logic.
+        if !config.enableLocationTracking, clManager.authorizationStatus == .notDetermined {
+            CDALogger.debug("waitForGeoReady: permission undetermined — requesting whenInUse authorization")
+            clManager.requestWhenInUseAuthorization()
+            let permDeadline = Date().addingTimeInterval(timeout)
+            while Date() < permDeadline {
+                try? await Task.sleep(nanoseconds: 100_000_000)
+                if clManager.authorizationStatus != .notDetermined {
+                    CDALogger.debug("waitForGeoReady: permission resolved (\(clManager.authorizationStatus.rawValue)) — retrying geo resolution")
+                    return await waitForGeoReady(timeout: timeout)
+                }
+            }
+            CDALogger.debug("waitForGeoReady: permission dialog not answered within timeout — ad request suppressed")
+            return nil
         }
-        if let loc = lastKnownLocation, loc.countryCode != nil { return loc }
+
+        let lastUpdateTime = UserDefaults.standard.double(forKey: cdLastLocationUpdateTimeKey)
+        let age: TimeInterval = lastUpdateTime > 0
+            ? Date().timeIntervalSince1970 - lastUpdateTime
+            : .infinity
+        let permission = clManager.authorizationStatus
+        let hasGPSPermission = permission == .authorizedAlways || permission == .authorizedWhenInUse
+
+        if age > effectiveAdLocationExpiryInterval, hasGPSPermission {
+            // Location is stale but GPS is available — request a fresh one-shot fix.
+            // handleAcceptedFix will update lastKnownLocation immediately on receipt.
+            if !isManagerRunning {
+                locationFetchTrigger = "AdRequest"
+                startLocationFix()
+            }
+        } else if age <= effectiveAdLocationExpiryInterval,
+                  let loc = lastKnownLocation, loc.countryCode != nil {
+            // Location is fresh and fully resolved — return immediately.
+            return loc
+        } else if age <= effectiveAdLocationExpiryInterval,
+                  let loc = lastKnownLocation {
+            // Fresh GPS fix exists but countryCode not yet resolved (GC/SLC skips geocoding).
+            // Reverse geocode the existing coordinates now to enrich city/region/zip/countryCode.
+            await reverseGeocode(location: CLLocation(latitude: loc.latitude, longitude: loc.longitude))
+        } else {
+            // Stale location with no GPS permission, or no location at all — use IP fallback.
+            await useIPGeolocationFallbackIfNeeded()
+        }
+
+        // Poll until a fully-resolved location (with countryCode) arrives or timeout expires.
         let deadline = Date().addingTimeInterval(timeout)
         while Date() < deadline {
             try? await Task.sleep(nanoseconds: 100_000_000)
             if let loc = lastKnownLocation, loc.countryCode != nil { return loc }
         }
-        return lastKnownLocation
+        // Return nil if countryCode still unavailable — callers must not fire the ad request
+        // without a country code, as the ad server requires it for routing (e.g. Japan subdomain).
+        guard let loc = lastKnownLocation, loc.countryCode != nil else {
+            CDALogger.debug("waitForGeoReady timed out — no countryCode resolved, ad request suppressed")
+            return nil
+        }
+        return loc
     }
 
     /// Returns `true` if a public IP is cached in UserDefaults.
@@ -146,11 +194,11 @@ public final class CDALocationManager: NSObject {
             // with permission already granted still has a background fallback armed
             // even if the app never gets a chance to background cleanly.
             armSignificantChangeMonitoringIfNeeded()
-            startLocationManagerIfUpdateIntervalExpired()
+            startLocationFix()
             startBatchUploadTimer()
             CDALogger.info("Location tracking started (authorizedAlways)")
         case .authorizedWhenInUse:
-            startLocationManagerIfUpdateIntervalExpired()
+            startLocationFix()
             startBatchUploadTimer()
             CDALogger.info("Location tracking started (authorizedWhenInUse — no background tracking until Always is granted)")
         case .notDetermined:
@@ -188,8 +236,6 @@ public final class CDALocationManager: NSObject {
             isMonitoringSignificantChanges = false
         }
         disableGeofenceChaining()
-        checkLocationTimer?.invalidate()
-        checkLocationTimer = nil
         isManagerRunning = false
         batchTimer?.invalidate()
         batchTimer = nil
@@ -208,53 +254,17 @@ public final class CDALocationManager: NSObject {
         clManager.allowsBackgroundLocationUpdates = newConfig.enableLocationTracking
     }
 
-    // MARK: - Gated single-shot fetch cycle
+    // MARK: - Location fix request
 
-    /// Requests a fresh fix only once `effectiveTrackingInterval` has elapsed since
-    /// the last fetch — mirrors old SDK's `startLocationManagerIfUpdateIntervalExpired`,
-    /// which never leaves CoreLocation streaming continuously.
-    private func startLocationManagerIfUpdateIntervalExpired() {
+    private func startLocationFix() {
         guard !isManagerRunning else {
             CDALogger.debug("[trigger:\(locationFetchTrigger)] fetch cycle already running — skipping")
             return
         }
-        let elapsed = Date().timeIntervalSince1970 - locationManagerStartTime
-        guard locationManagerStartTime == 0 || elapsed >= effectiveTrackingInterval else {
-            let remaining = effectiveTrackingInterval - elapsed
-            CDALogger.debug("[trigger:\(locationFetchTrigger)] interval not expired — \(Int(remaining))s remaining, rescheduling")
-            startCheckLocationTimer(after: remaining)
-            return
-        }
-        startLocationFix()
-    }
-
-    private func startLocationFix() {
         isManagerRunning = true
         locationManagerStartTime = Date().timeIntervalSince1970
         CDALogger.debug("[trigger:\(locationFetchTrigger)] requestLocation() called")
         clManager.requestLocation()
-    }
-
-    /// Schedules the next gated fetch — adapts the wait to the device's last known
-    /// speed (faster movement → check sooner), clamped between `effectiveMinBackgroundTime`
-    /// and the configured interval, mirroring old SDK's `processLocation`.
-    private func scheduleNextCheck(afterSpeed speed: CLLocationSpeed) {
-        var nextInterval = effectiveTrackingInterval
-        if speed > 0 {
-            let predicted = effectiveDistanceFilter / speed
-            nextInterval = min(max(predicted, effectiveMinBackgroundTime), effectiveTrackingInterval)
-        }
-        startCheckLocationTimer(after: nextInterval)
-    }
-
-    private func startCheckLocationTimer(after interval: TimeInterval) {
-        checkLocationTimer?.invalidate()
-        checkLocationTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: false) { [weak self] _ in
-            Task { @MainActor [weak self] in
-                self?.checkLocationTimer = nil
-                self?.startLocationManagerIfUpdateIntervalExpired()
-            }
-        }
     }
 
     // MARK: - Remote config overrides
@@ -355,7 +365,10 @@ public final class CDALocationManager: NSObject {
     /// instead of re-fetching if it's still within `effectiveAdLocationExpiryInterval`.
     private func useIPGeolocationFallbackIfNeeded() async {
         let lastUpdate = UserDefaults.standard.double(forKey: cdLastLocationUpdateTimeKey)
-        if lastUpdate > 0, lastKnownLocation != nil {
+        // Only skip the fetch if the cached location is both fresh AND fully resolved
+        // (has a countryCode). A fresh-but-no-countryCode location still needs the
+        // IP-geo call so the ad request can include country targeting.
+        if lastUpdate > 0, let loc = lastKnownLocation, loc.countryCode != nil {
             let age = Date().timeIntervalSince1970 - lastUpdate
             if age < effectiveAdLocationExpiryInterval {
                 CDALogger.debug("IP geolocation fallback skipped — cached location still fresh (\(Int(age))s old)")
@@ -410,11 +423,8 @@ public final class CDALocationManager: NSObject {
     private var isMonitoringGeofence = false
     private var isMonitoringSignificantChanges = false
 
-    // Gated single-shot fetch cycle state (mirrors old SDK's checkLocationInterval gating —
-    // only request a fix once per interval rather than streaming continuously).
-    // The interval itself is read live via `effectiveTrackingInterval` (remote-overridable).
+    // Single-shot fetch cycle state — set on requestLocation(), cleared on didUpdateLocations.
     private var locationManagerStartTime: TimeInterval = 0
-    private var checkLocationTimer: Timer?
     private var isManagerRunning = false
 
     // Trigger label written to logs (SLC = significant location change, GC = geofence chain)
@@ -425,6 +435,10 @@ public final class CDALocationManager: NSObject {
 
     // Last raw CLLocation for deduplication
     private var lastRawLocation: CLLocation?
+
+    // Timestamp of the most recently accepted fix — used in didExitRegion to suppress a
+    // GC-triggered fetch when SLC/visit already handled the same movement event.
+    private var lastAcceptedFixTime: TimeInterval = 0
 
     // Anchor for dwell-time merging — kept independent of `pendingLocations` (which
     // empties on every successful upload) so dwell accumulation survives across
@@ -485,16 +499,16 @@ public final class CDALocationManager: NSObject {
     }
 
     @objc private func handleAppWillEnterForeground() {
-        CDALogger.debug("App entering foreground — disarming SLC/Visit/geofence backstops")
+        CDALogger.debug("App entering foreground — disarming SLC/Visit backstops, keeping geofence chain active")
         if isMonitoringSignificantChanges {
             clManager.stopMonitoringSignificantLocationChanges()
             clManager.stopMonitoringVisits()
             isMonitoringSignificantChanges = false
         }
-        disableGeofenceChaining()
-        // Resume the gated fetch cycle if tracking is enabled
+        // Geofence chain stays armed — it drives location recording in both foreground
+        // and background. SLC/Visit are background-only backstops; the timer-based fixed
+        // interval is intentionally not restarted here.
         if config.enableLocationTracking {
-            startLocationManagerIfUpdateIntervalExpired()
             startBatchUploadTimer()
         }
     }
@@ -850,7 +864,8 @@ public final class CDALocationManager: NSObject {
                     pendingLocations[idx].geo.countryCode = countryCode
                     savePendingLocations()
                 }
-                // Also propagate to lastKnownLocation if it matches
+                // Also propagate to lastKnownLocation if it matches, and persist to UserDefaults
+                // so the enriched geo (with countryCode) survives across calls.
                 if var last = lastKnownLocation,
                    last.latitude == location.coordinate.latitude,
                    last.longitude == location.coordinate.longitude {
@@ -859,6 +874,9 @@ public final class CDALocationManager: NSObject {
                     last.zip         = zip
                     last.countryCode = countryCode
                     lastKnownLocation = last
+                    if let data = try? JSONEncoder().encode(last) {
+                        UserDefaults.standard.set(data, forKey: cdLastKnownLocationKey)
+                    }
                 }
                 CDALogger.debug("Reverse geocode: city:\(city ?? "-") region:\(region ?? "-") zip:\(zip ?? "-") country:\(countryCode ?? "-")")
             }
@@ -885,7 +903,6 @@ extension CDALocationManager: @preconcurrency CLLocationManagerDelegate {
             locationFetchTrigger = "SLC"
             CDALogger.debug("[trigger:SLC] significant location change received - starting location fetch")
             handleAcceptedFix(incoming)
-            scheduleNextCheck(afterSpeed: incoming.speed)
             return
         }
 
@@ -900,7 +917,6 @@ extension CDALocationManager: @preconcurrency CLLocationManagerDelegate {
         }
 
         isManagerRunning = false
-        scheduleNextCheck(afterSpeed: incoming.speed)
         handleAcceptedFix(incoming)
     }
 
@@ -917,7 +933,6 @@ extension CDALocationManager: @preconcurrency CLLocationManagerDelegate {
             timestamp: visit.arrivalDate
         )
         handleAcceptedFix(visitLocation)
-        scheduleNextCheck(afterSpeed: visitLocation.speed)
     }
 
     public func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
@@ -926,7 +941,7 @@ extension CDALocationManager: @preconcurrency CLLocationManagerDelegate {
             armSignificantChangeMonitoringIfNeeded()
         }
         if status == .authorizedAlways || status == .authorizedWhenInUse {
-            startLocationManagerIfUpdateIntervalExpired()
+            startLocationFix()
             startBatchUploadTimer()
         } else if status == .denied || status == .restricted {
             Task { @MainActor [weak self] in
@@ -938,20 +953,22 @@ extension CDALocationManager: @preconcurrency CLLocationManagerDelegate {
     public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         CDALogger.error("Location error: \(error.localizedDescription)")
         isManagerRunning = false
-        startCheckLocationTimer(after: effectiveMinBackgroundTime)
+        // Next fix will be triggered by the next geofence exit or SLC wakeup.
     }
 
     public func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         guard region.identifier == cdGeofenceChainIdentifier else { return }
         isMonitoringGeofence = false
-        CDALogger.debug("[trigger:GC] geofence exit received - checking if location update interval expired")
-        let lastUpdate = UserDefaults.standard.double(forKey: cdLastLocationUpdateTimeKey)
-        let elapsed = Date().timeIntervalSince1970 - lastUpdate
-        guard elapsed >= effectiveTrackingInterval else {
-            CDALogger.debug("[trigger:GC] geofence exit - skipped, location update interval not expired")
+        CDALogger.debug("[trigger:GC] geofence exit received")
+        // Skip if SLC/visit already accepted a fix within the dedup window — the geofence
+        // exit may be a stale OS-queued callback for a fence that was already superseded
+        // when SLC moved the anchor (e.g. SLC at 580m removes 400m fence, but iOS still
+        // delivers the 400m exit event, causing a duplicate fix at ~600m).
+        let timeSinceLastFix = Date().timeIntervalSince1970 - lastAcceptedFixTime
+        guard lastAcceptedFixTime == 0 || timeSinceLastFix > cdDuplicateLocationTimeWindow else {
+            CDALogger.debug("[trigger:GC] geofence exit — skipped, fix accepted \(Int(timeSinceLastFix))s ago (within \(Int(cdDuplicateLocationTimeWindow))s dedup window)")
             return
         }
-        guard !isManagerRunning else { return }
         locationFetchTrigger = "GC"
         CDALogger.debug("[trigger:GC] geofence exit - starting location fetch")
         startBatchUploadTimer()
@@ -962,6 +979,7 @@ extension CDALocationManager: @preconcurrency CLLocationManagerDelegate {
     /// gate, the geofence re-arm, and reverse geocoding. Mirrors old SDK's
     /// `CDLocationManager.updateLocation:`.
     private func handleAcceptedFix(_ incoming: CLLocation) {
+        lastAcceptedFixTime = Date().timeIntervalSince1970
         CDALogger.debug("[trigger:\(locationFetchTrigger)] didUpdateLocations - lat:\(String(format: "%.6f", incoming.coordinate.latitude)) lon:\(String(format: "%.6f", incoming.coordinate.longitude)) accuracy:\(String(format: "%.1f", incoming.horizontalAccuracy))m")
 
         let best = bestLocation(between: lastRawLocation, and: incoming)
@@ -970,6 +988,16 @@ extension CDALocationManager: @preconcurrency CLLocationManagerDelegate {
         var entry = CDALocationEntry(location: best)
         entry.geo.ipAddress  = UserDefaults.standard.string(forKey: cdPublicIPKey)
         entry.connectionType = currentConnectionType()
+
+        // Update lastKnownLocation immediately so ad requests always see a current
+        // location without waiting for the next batch upload (which may be minutes
+        // away). cdLastLocationUpdateTimeKey is also stamped here so adLocationExpiryInterval
+        // checks in waitForGeoReady() reflect the actual fix time, not the upload time.
+        lastKnownLocation = entry.geo
+        if let data = try? JSONEncoder().encode(entry.geo) {
+            UserDefaults.standard.set(data, forKey: cdLastKnownLocationKey)
+        }
+        UserDefaults.standard.set(Date().timeIntervalSince1970, forKey: cdLastLocationUpdateTimeKey)
 
         // Queue every eligible fix regardless of foreground/background state —
         // `appendOrMergeIntoPendingLocations` already decides, via `lastTrackingEntry`,
@@ -993,9 +1021,12 @@ extension CDALocationManager: @preconcurrency CLLocationManagerDelegate {
         // Update geofence chain centred on the new best location
         enableGeofenceChainingAtLocation(entry.geo)
 
-        // Kick off reverse geocoding to enrich city/region/zip/countryCode
-        Task { @MainActor [weak self] in
-            await self?.reverseGeocode(location: best)
+        // Reverse geocoding (city/region/zip/countryCode) is only needed before an ad request.
+        // GC, SLC, and Visit triggers record raw lat/lon for tracking — no geocode API call needed.
+        if locationFetchTrigger == "AdRequest" {
+            Task { @MainActor [weak self] in
+                await self?.reverseGeocode(location: best)
+            }
         }
     }
 }

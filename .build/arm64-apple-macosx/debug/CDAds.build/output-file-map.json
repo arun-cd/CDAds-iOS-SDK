@@ -1,6 +1,13 @@
 {
   "": {
-    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/master.swiftdeps"
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/primary.swiftdeps"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/Browser/CDABrowserViewController.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABrowserViewController.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABrowserViewController.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABrowserViewController~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABrowserViewController.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABrowserViewController.dia"
   },
   "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDABundle.swift": {
     "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABundle.d",
@@ -8,6 +15,20 @@
     "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABundle~partial.swiftmodule",
     "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABundle.swiftdeps",
     "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABundle.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDACountryCodes.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDACountryCodes.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDACountryCodes.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDACountryCodes~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDACountryCodes.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDACountryCodes.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDADebugLogStore.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogStore.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogStore.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogStore~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogStore.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogStore.dia"
   },
   "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDALogger.swift": {
     "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDALogger.d",
@@ -93,12 +114,33 @@
     "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABannerView.swiftdeps",
     "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABannerView.dia"
   },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDADebugLogViewController.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogViewController.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogViewController.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogViewController~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogViewController.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogViewController.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDADebugTrigger.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugTrigger.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugTrigger.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugTrigger~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugTrigger.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugTrigger.dia"
+  },
   "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDAInterstitialAd.swift": {
     "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDAInterstitialAd.d",
     "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDAInterstitialAd.swift.o",
     "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDAInterstitialAd~partial.swiftmodule",
     "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDAInterstitialAd.swiftdeps",
     "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDAInterstitialAd.dia"
+  },
+  "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDALandingPageBehaviour.swift": {
+    "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDALandingPageBehaviour.d",
+    "object": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDALandingPageBehaviour.swift.o",
+    "swiftmodule": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDALandingPageBehaviour~partial.swiftmodule",
+    "swift-dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDALandingPageBehaviour.swiftdeps",
+    "diagnostics": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDALandingPageBehaviour.dia"
   },
   "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDANativeAdData.swift": {
     "dependencies": "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDANativeAdData.d",

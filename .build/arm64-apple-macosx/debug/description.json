@@ -7,6 +7,20 @@
     }
   ],
   "copyCommands" : {
+    "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds_CDAds.bundle/CDCloseButtonX.png" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/Resources/CDCloseButtonX.png"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds_CDAds.bundle/CDCloseButtonX.png"
+        }
+      ]
+    },
     "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds_CDAds.bundle/mraid.js" : {
       "inputs" : [
         {
@@ -34,14 +48,26 @@
 
   ],
   "swiftCommands" : {
-    "C.CDAds-arm64-apple-macosx26.0-debug.module" : {
+    "C.CDAds-arm64-apple-macosx-debug.module" : {
       "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
       "fileList" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/sources",
       "importPath" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/Browser/CDABrowserViewController.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDABundle.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDACountryCodes.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDADebugLogStore.swift"
         },
         {
           "kind" : "file",
@@ -93,7 +119,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDADebugLogViewController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDADebugTrigger.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDAInterstitialAd.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDALandingPageBehaviour.swift"
         },
         {
           "kind" : "file",
@@ -157,7 +195,7 @@
         },
         {
           "kind" : "virtual",
-          "name" : "<CDAds-arm64-apple-macosx26.0-debug.module-resources>"
+          "name" : "<CDAds-arm64-apple-macosx-debug.module-resources>"
         },
         {
           "kind" : "file",
@@ -168,7 +206,10 @@
       "moduleName" : "CDAds",
       "moduleOutputPath" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/Modules/CDAds.swiftmodule",
       "objects" : [
+        "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABrowserViewController.swift.o",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABundle.swift.o",
+        "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDACountryCodes.swift.o",
+        "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogStore.swift.o",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDALogger.swift.o",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDAPlistParams.swift.o",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDAInterstitialViewController.swift.o",
@@ -181,7 +222,10 @@
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDAVASTParser.swift.o",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDAViewabilityTracker.swift.o",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABannerView.swift.o",
+        "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogViewController.swift.o",
+        "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugTrigger.swift.o",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDAInterstitialAd.swift.o",
+        "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDALandingPageBehaviour.swift.o",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDANativeAdData.swift.o",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDANativeAdRequest.swift.o",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDAReward.swift.o",
@@ -223,11 +267,9 @@
         "-plugin-path",
         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
         "-sdk",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-F",
         "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-        "-F",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
         "-I",
         "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
         "-L",
@@ -236,15 +278,11 @@
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-Xcc",
         "-F",
         "-Xcc",
         "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-        "-Xcc",
-        "-F",
-        "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
         "-Xcc",
         "-fPIC",
         "-Xcc",
@@ -256,7 +294,19 @@
       "outputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABrowserViewController.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABundle.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDACountryCodes.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogStore.swift.o"
         },
         {
           "kind" : "file",
@@ -308,7 +358,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogViewController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugTrigger.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDAInterstitialAd.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDALandingPageBehaviour.swift.o"
         },
         {
           "kind" : "file",
@@ -373,7 +435,10 @@
       ],
       "prepareForIndexing" : false,
       "sources" : [
+        "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/Browser/CDABrowserViewController.swift",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDABundle.swift",
+        "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDACountryCodes.swift",
+        "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDADebugLogStore.swift",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDALogger.swift",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDAPlistParams.swift",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/Interstitial/CDAInterstitialViewController.swift",
@@ -386,7 +451,10 @@
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/VAST/CDAVASTParser.swift",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/Viewability/CDAViewabilityTracker.swift",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDABannerView.swift",
+        "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDADebugLogViewController.swift",
+        "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDADebugTrigger.swift",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDAInterstitialAd.swift",
+        "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDALandingPageBehaviour.swift",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDANativeAdData.swift",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDANativeAdRequest.swift",
         "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDAReward.swift",
@@ -405,7 +473,7 @@
       "tempsPath" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build",
       "wholeModuleOptimization" : false
     },
-    "C.CDAdsPackageTests-arm64-apple-macosx26.0-debug.module" : {
+    "C.CDAdsPackageTests-arm64-apple-macosx-debug.module" : {
       "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
       "fileList" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAdsPackageTests.build/sources",
       "importPath" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/Modules",
@@ -459,11 +527,9 @@
         "-plugin-path",
         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
         "-sdk",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-F",
         "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-        "-F",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
         "-I",
         "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
         "-L",
@@ -472,15 +538,11 @@
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-Xcc",
         "-F",
         "-Xcc",
         "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-        "-Xcc",
-        "-F",
-        "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
         "-Xcc",
         "-fPIC",
         "-Xcc",
@@ -506,7 +568,7 @@
       "tempsPath" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAdsPackageTests.build",
       "wholeModuleOptimization" : false
     },
-    "C.CDAdsTests-arm64-apple-macosx26.0-debug.module" : {
+    "C.CDAdsTests-arm64-apple-macosx-debug.module" : {
       "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
       "fileList" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAdsTests.build/sources",
       "importPath" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/Modules",
@@ -559,11 +621,9 @@
         "-plugin-path",
         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
         "-sdk",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-F",
         "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-        "-F",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
         "-I",
         "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
         "-L",
@@ -572,15 +632,11 @@
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-Xcc",
         "-F",
         "-Xcc",
         "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-        "-Xcc",
-        "-F",
-        "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
         "-Xcc",
         "-fPIC",
         "-Xcc",
@@ -618,7 +674,10 @@
       "-package-name",
       "cdads_ios_sdk",
       "-c",
+      "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/Browser/CDABrowserViewController.swift",
       "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDABundle.swift",
+      "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDACountryCodes.swift",
+      "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDADebugLogStore.swift",
       "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDALogger.swift",
       "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDAPlistParams.swift",
       "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/Interstitial/CDAInterstitialViewController.swift",
@@ -631,7 +690,10 @@
       "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/VAST/CDAVASTParser.swift",
       "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/Viewability/CDAViewabilityTracker.swift",
       "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDABannerView.swift",
+      "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDADebugLogViewController.swift",
+      "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDADebugTrigger.swift",
       "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDAInterstitialAd.swift",
+      "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDALandingPageBehaviour.swift",
       "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDANativeAdData.swift",
       "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDANativeAdRequest.swift",
       "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDAReward.swift",
@@ -673,11 +735,9 @@
       "-plugin-path",
       "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
       "-sdk",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-F",
       "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-      "-F",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
       "-I",
       "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
       "-L",
@@ -686,15 +746,11 @@
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-Xcc",
       "-F",
       "-Xcc",
       "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-      "-Xcc",
-      "-F",
-      "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
       "-Xcc",
       "-fPIC",
       "-Xcc",
@@ -739,11 +795,9 @@
       "-plugin-path",
       "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
       "-sdk",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-F",
       "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-      "-F",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
       "-I",
       "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
       "-L",
@@ -752,15 +806,11 @@
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-Xcc",
       "-F",
       "-Xcc",
       "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-      "-Xcc",
-      "-F",
-      "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
       "-Xcc",
       "-fPIC",
       "-Xcc",
@@ -804,11 +854,9 @@
       "-plugin-path",
       "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
       "-sdk",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-F",
       "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-      "-F",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
       "-I",
       "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
       "-L",
@@ -817,15 +865,11 @@
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-Xcc",
       "-F",
       "-Xcc",
       "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
-      "-Xcc",
-      "-F",
-      "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
       "-Xcc",
       "-fPIC",
       "-Xcc",
@@ -879,7 +923,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/Browser/CDABrowserViewController.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDABundle.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDACountryCodes.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Internal/CDADebugLogStore.swift"
         },
         {
           "kind" : "file",
@@ -931,7 +987,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDADebugLogViewController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDADebugTrigger.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDAInterstitialAd.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/Sources/CDAds/Public/CDALandingPageBehaviour.swift"
         },
         {
           "kind" : "file",
@@ -1027,7 +1095,27 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABrowserViewController.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDABundle.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDACountryCodes.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugLogViewController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDADebugTrigger.swift.o"
         },
         {
           "kind" : "file",
@@ -1040,6 +1128,10 @@
         {
           "kind" : "file",
           "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDAInterstitialViewController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds.build/CDALandingPageBehaviour.swift.o"
         },
         {
           "kind" : "file",

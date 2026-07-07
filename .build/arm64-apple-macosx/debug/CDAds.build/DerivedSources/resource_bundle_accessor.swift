@@ -1,7 +1,7 @@
 import Foundation
 
 extension Foundation.Bundle {
-    static let module: Bundle = {
+    static nonisolated let module: Bundle = {
         let mainPath = Bundle.main.bundleURL.appendingPathComponent("CDAds_CDAds.bundle").path
         let buildPath = "/Users/arungupta/Workspace/CDAds-iOS-SDK/.build/arm64-apple-macosx/debug/CDAds_CDAds.bundle"
 

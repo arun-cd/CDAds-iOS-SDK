@@ -75,8 +75,14 @@ public final class CDAInterstitialAd {
         // The ad server won't return a fill without a country — if we're relying on the
         // SDK's automatic location (no manual geoInfo supplied) wait briefly for reverse
         // geocoding / IP fallback to resolve it first rather than wasting the request.
+        // nil means geo timed out without a countryCode — abort rather than send a bad request.
         if request.geoInfo == nil {
-            _ = await CDAds.shared.location.waitForGeoReady()
+            guard await CDAds.shared.location.waitForGeoReady() != nil else {
+                let error = CDAdsError(.invalidRequest, "Country code unavailable — ad request aborted")
+                state = .idle
+                delegate?.interstitialDidFailToLoad(self, error: error)
+                return
+            }
         }
 
         do {
